@@ -4,10 +4,7 @@
     "java.project.referencedLibraries": {
         "include": [
             "lib/**/*.jar",
-            "c:\\Users\\felix\\Downloads\\jackson-databind-2.17.0.jar",
-            "c:\\Users\\felix\\Desktop\\Programmieren\\Java Projekte\\Libraries\\jackson-annotations-2.17.0.jar",
-            "c:\\Users\\felix\\Desktop\\Programmieren\\Java Projekte\\Libraries\\jackson-core-2.17.0.jar",
-            "c:\\Users\\felix\\Desktop\\Programmieren\\Java Projekte\\Libraries\\jackson-databind-2.17.0.jar"
+            "c:\\Users\\felix\\Downloads\\jackson-databind-2.17.0.jar"
         ],
         "exclude": [
             "c:\\Users\\felix\\Downloads\\jackson-core-2.17.0.jar"
