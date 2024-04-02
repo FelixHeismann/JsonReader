@@ -9,7 +9,7 @@ public class GameGui {
     private JButton c;
     private JButton d;
     private JLabel frage;
-        public GameGui(Frage f){
+        public GameGui(Frage f, controller con){
             JFrame frame = new JFrame();
             frame.setSize(1920, 1080);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -29,10 +29,10 @@ public class GameGui {
             frage.setSize(400, 100);
             frage.setBackground(Color.cyan);
             frame.add(frage);
-            a.addActionListener(e -> selectionButtonPressed(f, a));
-            b.addActionListener(e -> selectionButtonPressed(f, b));
-            c.addActionListener(e -> selectionButtonPressed(f, c));
-            d.addActionListener(e -> selectionButtonPressed(f, b));
+            a.addActionListener(e -> selectionButtonPressed(f, a, con));
+            b.addActionListener(e -> selectionButtonPressed(f, b, con));
+            c.addActionListener(e -> selectionButtonPressed(f, c, con));
+            d.addActionListener(e -> selectionButtonPressed(f, b, con));
         }
 
         public JButton addButtons(String text, int xc, int yc){
@@ -43,9 +43,15 @@ public class GameGui {
             return button;
         }
 
-        public void selectionButtonPressed(Frage f, JButton j){
+        public void selectionButtonPressed(Frage f, JButton j, controller con){
+            System.out.println("gedrückt");
+            System.out.println(j.getText());
+            System.out.println(f.getRichtige_antwort());
             if(f.getRichtige_antwort()==j.getText()){
-                main.nextQuestions();   
+                System.out.println("richtig");
+                con.nextQuestion();   
+            }else{
+                System.out.println("leider falsch :(");
             }
         }
 
