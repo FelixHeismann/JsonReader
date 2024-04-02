@@ -1,5 +1,6 @@
 import java.io.File;
 import java.util.List;
+import java.util.Random;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -18,15 +19,17 @@ public class Reader {
 
         try {
             ListeFragen = mapper.readValue(file, new TypeReference<List<Frage>>(){});
-            for(Frage frage : ListeFragen){
-                System.out.println(frage.frage);
-            }
         } catch (JsonProcessingException ex) {
             System.out.println(ex.toString());
             return;
         }
     }
 
+    public static Frage getRandomFrage(){
+        Random ran = new Random();
+        int i = ran.nextInt(0, ListeFragen.size());
+        return ListeFragen.get(i);
+    }
 
 }
 
