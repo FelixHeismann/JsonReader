@@ -1,0 +1,603 @@
+[
+  {
+  "id": 1,
+  "frage": "Was ist die Hauptstadt von Frankreich?",
+  "antworten": {
+      "a": "Berlin",
+      "b": "Rom",
+      "c": "Paris",
+      "d": "Madrid"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 2
+  },
+  {
+    "id": 2,
+    "frage": "Wer schrieb das Buch 'Die Verwandlung'?",
+    "antworten": {
+      "a": "Franz Kafka",
+      "b": "Thomas Mann",
+      "c": "Friedrich Nietzsche",
+      "d": "Hermann Hesse"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 3
+  },
+  {
+    "id": 3,
+    "frage": "Wie viele Planeten hat unser Sonnensystem?",
+    "antworten": {
+      "a": "7",
+      "b": "8",
+      "c": "9",
+      "d": "10"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 1
+  },
+  {
+    "id": 4,
+    "frage": "Was ist die chemische Formel für Wasser?",
+    "antworten": {
+      "a": "H2O",
+      "b": "CO2",
+      "c": "NaCl",
+      "d": "CH4"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 4
+  },
+  {
+    "id": 5,
+    "frage": "Wer war der erste Mensch auf dem Mond?",
+    "antworten": {
+      "a": "Yuri Gagarin",
+      "b": "Buzz Aldrin",
+      "c": "Neil Armstrong",
+      "d": "John Glenn"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 5
+  },
+  {
+    "id": 6,
+    "frage": "Was ist die Hauptstadt von Deutschland?",
+      "antworten": {
+      "a": "München",
+      "b": "Berlin",
+      "c": "Frankfurt",
+      "d": "Hamburg"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 2
+  },
+  {
+   "id": 7,
+    "frage": "Wie viele Kontinente gibt es?",
+    "antworten": {
+      "a": "5",
+      "b": "6",
+      "c": "7",
+      "d": "8"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 3
+  },
+  {
+    "id": 8,
+    "frage": "Wer malte die Mona Lisa?",
+    "antworten": {
+      "a": "Leonardo da Vinci",
+      "b": "Pablo Picasso",
+      "c": "Vincent van Gogh",
+      "d": "Michelangelo"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 4
+  },
+  {
+    "id": 9,
+    "frage": "Was ist die kleinste Primzahl?",
+    "antworten": {
+      "a": "1",
+      "b": "2",
+      "c": "3",
+      "d": "4"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 5
+  },
+  {
+    "id": 10,
+    "frage": "Was ist die Hauptzutat in Schokolade?",
+    "antworten": {
+      "a": "Eier",
+      "b": "Milch",
+      "c": "Zucker",
+      "d": "Kakao"
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 1
+  },    
+  {
+    "id": 11,
+    "frage": "Welcher Ozean liegt zwischen Nordamerika und Europa?",
+    "antworten": {
+      "a": "Atlantischer Ozean",
+      "b": "Pazifischer Ozean",
+      "c": "Indischer Ozean",
+      "d": "Arktischer Ozean"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 2
+  },
+  {
+    "id": 12,
+    "frage": "Was ist die Hauptstadt von Japan?",
+    "antworten": {
+      "a": "Peking",
+      "b": "Tokio",
+      "c": "Seoul",
+      "d": "Bangkok"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 3
+  },
+  {
+    "id": 13,
+    "frage": "Wie nennt man ein dreieckiges Gebäude, das im alten Ägypten als Grabstätte diente?",
+    "antworten": {
+      "a": "Obelisk",
+      "b": "Pyramide",
+      "c": "Sphinx",
+      "d": "Tempel"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 1
+  },
+  {
+    "id": 14,
+    "frage": "Welcher Planet ist der zweitgrößte im Sonnensystem?",
+    "antworten": {
+      "a": "Venus",
+      "b": "Mars",
+      "c": "Jupiter",
+      "d": "Saturn"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 4
+  },
+  {
+    "id": 15,
+    "frage": "Wer war der erste Präsident der Vereinigten Staaten?",
+    "antworten": {
+      "a": "Thomas Jefferson",
+      "b": "George Washington",
+      "c": "Abraham Lincoln",
+      "d": "John Adams"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 5
+  },
+  {
+    "id": 16,
+    "frage": "Welche Farbe hat das Blut eines Tintenfisches?",
+    "antworten": {
+      "a": "Blau",
+      "b": "Grün",
+      "c": "Rot",
+      "d": "Schwarz"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 2
+  },
+  {
+    "id": 17,
+    "frage": "Wer schrieb 'Romeo und Julia'?",
+    "antworten": {
+      "a": "William Shakespeare",
+      "b": "Charles Dickens",
+      "c": "Jane Austen",
+      "d": "Mark Twain"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 3
+  },
+  {
+    "id": 18,
+    "frage": "Wie viele Knochen hat ein erwachsener Mensch?",
+    "antworten": {
+      "a": "206",
+      "b": "300",
+      "c": "180",
+      "d": "120"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 4
+  },
+  {
+    "id": 19,
+    "frage": "Was ist die Hauptzutat in Sushi?",
+    "antworten": {
+      "a": "Reis",
+      "b": "Nudeln",
+      "c": "Fisch",
+      "d": "Huhn"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 1
+  },
+  {
+    "id": 20,
+    "frage": "In welchem Jahr endete der Erste Weltkrieg?",
+    "antworten": {
+      "a": "1914",
+      "b": "1918",
+      "c": "1922",
+      "d": "1939"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 3
+  },
+  {
+    "id": 21,
+    "frage": "Welches ist das längste Fluss der Welt?",
+    "antworten": {
+      "a": "Nil",
+      "b": "Amazonas",
+      "c": "Mississippi",
+      "d": "Jangtsekiang"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 4
+  },
+  {
+    "id": 22,
+    "frage": "Was ist die Hauptstadt von Australien?",
+    "antworten": {
+      "a": "Sydney",
+      "b": "Canberra",
+      "c": "Melbourne",
+      "d": "Perth"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 2
+  },
+  {
+    "id": 23,
+    "frage": "Wer war der erste Mensch im Weltraum?",
+    "antworten": {
+      "a": "Alan Shepard",
+      "b": "Yuri Gagarin",
+      "c": "John Glenn",
+      "d": "Neil Armstrong"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 5
+  },
+  {
+    "id": 24,
+    "frage": "Was ist die chemische Formel für Kohlendioxid?",
+    "antworten": {
+      "a": "CO",
+      "b": "CO2",
+      "c": "CO3",
+      "d": "C2O"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 3
+  },
+  {
+    "id": 25,
+    "frage": "Wer malte die 'Mona Lisa'?",
+    "antworten": {
+      "a": "Pablo Picasso",
+      "b": "Vincent van Gogh",
+      "c": "Leonardo da Vinci",
+      "d": "Michelangelo"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 4
+  },
+  {
+    "id": 26,
+    "frage": "Wie viele Seiten hat ein Würfel?",
+    "antworten": {
+      "a": "4",
+      "b": "6",
+      "c": "8",
+      "d": "12"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 1
+  },
+  {
+    "id": 27,
+    "frage": "Was ist die Hauptzutat in Guacamole?",
+    "antworten": {
+      "a": "Käse",
+      "b": "Avocado",
+      "c": "Tomaten",
+      "d": "Reis"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 28,
+    "frage": "Wer komponierte die 'Neunte Sinfonie'?",
+    "antworten": {
+      "a": "Ludwig van Beethoven",
+      "b": "Wolfgang Amadeus Mozart",
+      "c": "Johann Sebastian Bach",
+      "d": "Johannes Brahms"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 29,
+    "frage": "In welchem Jahr wurde Nelson Mandela zum ersten schwarzen Präsidenten Südafrikas gewählt?",
+    "antworten": {
+      "a": "1990",
+      "b": "1994",
+      "c": "1998",
+      "d": "2002"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 30,
+    "frage": "Was ist die chemische Formel für Tafelsalz?",
+    "antworten": {
+      "a": "NaCl",
+      "b": "H2O",
+      "c": "CO2",
+      "d": "HCl"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 31,
+    "frage": "Welches ist das häufigste Element in der Erdkruste?",
+    "antworten": {
+      "a": "Sauerstoff",
+      "b": "Kohlenstoff",
+      "c": "Eisen",
+      "d": "Silizium"
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 32,
+    "frage": "Wer schrieb 'Die Odyssee'?",
+    "antworten": {
+      "a": "Homer",
+      "b": "Platon",
+      "c": "Aristoteles",
+      "d": "Sokrates"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 33,
+    "frage": "Wie viele Karten hat ein vollständiges Tarot-Deck?",
+    "antworten": {
+      "a": "52",
+      "b": "78",
+      "c": "64",
+      "d": "36"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 34,
+    "frage": "Wer war der erste Mensch, der den Mount Everest bestieg?",
+    "antworten": {
+      "a": "Edmund Hillary",
+      "b": "Reinhold Messner",
+      "c": "Tenzing Norgay",
+      "d": "Heinrich Harrer"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 35,
+    "frage": "Welcher der folgenden Autoren hat 'Der kleine Prinz' geschrieben?",
+    "antworten": {
+      "a": "Franz Kafka",
+      "b": "Antoine de Saint-Exupéry",
+      "c": "Leo Tolstoi",
+      "d": "Ernest Hemingway"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 36,
+    "frage": "Welcher Chemiker entdeckte das Periodensystem?",
+    "antworten": {
+      "a": "Marie Curie",
+      "b": "Dmitri Mendelejew",
+      "c": "Antoine Lavoisier",
+      "d": "Robert Boyle"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 37,
+    "frage": "Welches ist das kleinste Land der Welt?",
+    "antworten": {
+      "a": "Monaco",
+      "b": "Vatikanstadt",
+      "c": "San Marino",
+      "d": "Nauru"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 38,
+    "frage": "In welchem Jahr endete der Kalte Krieg?",
+    "antworten": {
+      "a": "1989",
+      "b": "1991",
+      "c": "1993",
+      "d": "1995"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 39,
+    "frage": "Was ist die Hauptstadt von Kanada?",
+    "antworten": {
+      "a": "Toronto",
+      "b": "Vancouver",
+      "c": "Ottawa",
+      "d": "Montreal"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 40,
+    "frage": "Welches Tier ist das größte auf der Erde?",
+    "antworten": {
+      "a": "Blaue Wal",
+      "b": "Elefant",
+      "c": "Giraffe",
+      "d": "Kolibri"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 2
+  },
+  {
+    "id": 41,
+    "frage": "Welche hochkarätige Mathematikpreisfrage wurde erst im Jahr 2018 gelöst?",
+    "antworten": {
+      "a": "Goldbachs Vermutung",
+      "b": "Riemannsche Vermutung",
+      "c": "Beals Vermutung",
+      "d": "Eulersche Vermutung"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 42,
+    "frage": "Was ist die häufigste Blutgruppe in der Welt?",
+    "antworten": {
+      "a": "A",
+      "b": "B",
+      "c": "AB",
+      "d": "0"
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 43,
+    "frage": "Welcher der folgenden Könige hatte nie geheiratet?",
+    "antworten": {
+      "a": "Heinrich VIII.",
+      "b": "Ludwig XIV.",
+      "c": "Wilhelm der Eroberer",
+      "d": "Friedrich II."
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 44,
+    "frage": "Welches der folgenden Tiere hat keine natürlichen Feinde?",
+    "antworten": {
+      "a": "Tiger",
+      "b": "Känguru",
+      "c": "Panda",
+      "d": "Nashorn"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 45,
+    "frage": "Welche Stadt liegt am tiefsten unter dem Meeresspiegel?",
+    "antworten": {
+      "a": "Amsterdam",
+      "b": "Venedig",
+      "c": "Kairo",
+      "d": "Jerusalem"
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 46,
+    "frage": "Welcher der folgenden Schriftsteller starb in einem Duell?",
+    "antworten": {
+      "a": "Ernest Hemingway",
+      "b": "Victor Hugo",
+      "c": "Edgar Allan Poe",
+      "d": "Miguel de Cervantes"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 47,
+    "frage": "Welche Sprache hat die meisten Wörter?",
+    "antworten": {
+      "a": "Englisch",
+      "b": "Chinesisch",
+      "c": "Deutsch",
+      "d": "Französisch"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 48,
+    "frage": "Wer war der erste Mensch, der die Pole erreichte?",
+    "antworten": {
+      "a": "Roald Amundsen",
+      "b": "Ernest Shackleton",
+      "c": "Robert Peary",
+      "d": "Fridtjof Nansen"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 49,
+    "frage": "Was ist das am meisten konsumierte Getränk der Welt nach Wasser und Tee?",
+    "antworten": {
+      "a": "Kaffee",
+      "b": "Cola",
+      "c": "Bier",
+      "d": "Wein"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 50,
+    "frage": "Wer schrieb das Buch 'Der Prozess'?",
+    "antworten": {
+      "a": "Franz Kafka",
+      "b": "Thomas Mann",
+      "c": "Albert Camus",
+      "d": "Fyodor Dostoevsky"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 10
+  }
+]
+  
