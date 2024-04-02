@@ -21,6 +21,10 @@ public class Reader {
             System.out.println(ex.toString());
         }
     }
+
+    public static void main(String[] args){
+        
+    }
     
     public Frage getRandomFrage(){
         Random ran = new Random();
