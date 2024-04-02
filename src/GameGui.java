@@ -17,16 +17,24 @@ public class GameGui {
             frame.add(b);
             frame.add(c);
             frame.add(d);
+            a.setSize(200, 100);
+            b.setSize(200, 100);
+            c.setSize(200, 100);
+            d.setSize(200, 100);
+            frame.setBackground(Color.yellow);
             a.addActionListener(e -> selectionButtonPressed(a));
             b.addActionListener(e -> selectionButtonPressed(b));
             c.addActionListener(e -> selectionButtonPressed(c));
             d.addActionListener(e -> selectionButtonPressed(d));
-            frame.setVisible(true);            
+            frame.setVisible(true);    
+            JLabel frage = new JLabel(f.getFrage());
+            frame.add(frage);
         }
 
         public JButton addButtons(String text, int xc, int yc){
             JButton button = new JButton(text); 
-            button.setSize(100, 200);
+            button.setSize(200, 100);
+            button.setLocation(xc, yc);
             button.setBackground(Color.red); 
             return button;
         }
