@@ -9,6 +9,7 @@ public class GameGui {
             JFrame frame = new JFrame();
             frame.setSize(1920, 1080);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setLayout(null);
             JButton a = addButtons(f.getAntworten().getA(),200, 200);
             JButton b = addButtons(f.getAntworten().getB(),600, 200);
             JButton c = addButtons(f.getAntworten().getC(),200, 600);
@@ -17,17 +18,16 @@ public class GameGui {
             frame.add(b);
             frame.add(c);
             frame.add(d);
-            a.setSize(200, 100);
-            b.setSize(200, 100);
-            c.setSize(200, 100);
-            d.setSize(200, 100);
             frame.setBackground(Color.yellow);
             a.addActionListener(e -> selectionButtonPressed(a));
             b.addActionListener(e -> selectionButtonPressed(b));
             c.addActionListener(e -> selectionButtonPressed(c));
             d.addActionListener(e -> selectionButtonPressed(d));
             frame.setVisible(true);    
-            JLabel frage = new JLabel(f.getFrage());
+            JLabel frage = new JLabel();
+            frage.setText(f.getFrage());
+            frage.setSize(400, 100);
+            frage.setBackground(Color.cyan);
             frame.add(frage);
         }
 
@@ -35,7 +35,7 @@ public class GameGui {
             JButton button = new JButton(text); 
             button.setSize(200, 100);
             button.setLocation(xc, yc);
-            button.setBackground(Color.red); 
+            button.setBackground(Color.cyan); 
             return button;
         }
 
