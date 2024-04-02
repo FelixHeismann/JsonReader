@@ -10,9 +10,7 @@ public class Reader {
 
     public List<Frage> ListeFragen;
 
-
-    public List<Frage> getFragen(){
-
+    public Reader() {
         File file = new File("C:\\Quizspiel\\JsonReader\\lib\\Fragen.json");
 
         ObjectMapper mapper = new ObjectMapper();
@@ -22,10 +20,7 @@ public class Reader {
         } catch (Exception ex) {
             System.out.println(ex.toString());
         }
-
-        return ListeFragen;
     }
-
     
     public Frage getRandomFrage(){
         Random ran = new Random();
