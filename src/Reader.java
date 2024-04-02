@@ -12,7 +12,7 @@ public class Reader {
 
     public static void main(String[] args) throws Exception {
 
-        File file = new File("C:\\Users\\felix\\Desktop\\Programmieren\\Java Projekte\\Json File Reader\\JsonReader\\lib\\Fragen.json");
+        File file = new File("C:\\Quizspiel\\JsonReader\\lib\\Fragen.json");
 
         ObjectMapper mapper = new ObjectMapper();
 
