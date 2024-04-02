@@ -26,6 +26,7 @@ public class GameGui {
 
         public JButton addButtons(String text, int xc, int yc){
             JButton button = new JButton(text); 
+            button.setSize(100, 200);
             button.setBackground(Color.red); 
             return button;
         }
