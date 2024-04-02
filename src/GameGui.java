@@ -9,7 +9,9 @@ public class GameGui {
     private JButton c;
     private JButton d;
     private JLabel frage;
-        public GameGui(Frage f, controller con){
+    private Frage f;
+        public GameGui(Frage fr, controller con){
+            f = fr;
             JFrame frame = new JFrame();
             frame.setSize(1920, 1080);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -29,10 +31,10 @@ public class GameGui {
             frage.setSize(400, 100);
             frage.setBackground(Color.cyan);
             frame.add(frage);
-            a.addActionListener(e -> selectionButtonPressed(f, a, con));
-            b.addActionListener(e -> selectionButtonPressed(f, b, con));
-            c.addActionListener(e -> selectionButtonPressed(f, c, con));
-            d.addActionListener(e -> selectionButtonPressed(f, b, con));
+            a.addActionListener(e -> selectionButtonPressed(f, "a", con));
+            b.addActionListener(e -> selectionButtonPressed(f, "b", con));
+            c.addActionListener(e -> selectionButtonPressed(f, "c", con));
+            d.addActionListener(e -> selectionButtonPressed(f, "d", con));
         }
 
         public JButton addButtons(String text, int xc, int yc){
@@ -43,11 +45,11 @@ public class GameGui {
             return button;
         }
 
-        public void selectionButtonPressed(Frage f, JButton j, controller con){
+        public void selectionButtonPressed(Frage f,String j, controller con){
             System.out.println("gedrückt");
-            System.out.println(j.getText());
             System.out.println(f.getRichtige_antwort());
-            if(f.getRichtige_antwort()==j.getText()){
+            System.out.println(j);
+            if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
                 con.nextQuestion();   
             }else{
@@ -55,11 +57,12 @@ public class GameGui {
             }
         }
 
-        public void changeButtons(Frage f){
-            a.setText(f.getAntworten().getA());
-            b.setText(f.getAntworten().getB());
-            c.setText(f.getAntworten().getC());
-            d.setText(f.getAntworten().getD());
-            frage.setText(f.getFrage());
+        public void changeButtons(Frage fra){
+            a.setText(fra.getAntworten().getA());
+            b.setText(fra.getAntworten().getB());
+            c.setText(fra.getAntworten().getC());
+            d.setText(fra.getAntworten().getD());
+            frage.setText(fra.getFrage());
+            f = fra;
         }
 }
