@@ -27,7 +27,7 @@ public class Reader {
 
     public static Frage getRandomFrage(){
         Random ran = new Random();
-        int i = ran.nextInt(1, ListeFragen.size());
+        int i = ran.nextInt(0, ListeFragen.size());
         return ListeFragen.get(i);
     }
 
