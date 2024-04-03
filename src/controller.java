@@ -1,7 +1,12 @@
+import java.util.*;
+
 public class controller {
+    
     private int counter;
     private GameGui gui;
     private Reader reader; 
+    private List<Frage> Fragen = new ArrayList<Frage>();
+
     public controller(){
         reader = new Reader();
         counter = 1;
@@ -10,6 +15,11 @@ public class controller {
 
     public void nextQuestion(){
         counter++;
+        Frage frage = reader.getRandomFrage();
+        while (Fragen.contains(frage)) {
+            frage = reader.getRandomFrage();
+        } 
+        Fragen.add(frage);
         gui.changeButtons(reader.getRandomFrage());
     }
 

@@ -1,6 +1,4 @@
 import java.awt.Color;
-import java.awt.event.ActionListener;
-
 import javax.swing.*;
 
 public class GameGui {
@@ -15,6 +13,7 @@ public class GameGui {
     private JButton endButton;
     private JLabel endLabel;
     private JLabel counter;
+    
         public GameGui(Frage fr, controller con){
             f = fr;
             control = con;
