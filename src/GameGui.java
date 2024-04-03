@@ -14,6 +14,7 @@ public class GameGui {
     private controller control;
     private JButton endButton;
     private JLabel endLabel;
+    private JLabel counter;
         public GameGui(Frage fr, controller con){
             f = fr;
             control = con;
