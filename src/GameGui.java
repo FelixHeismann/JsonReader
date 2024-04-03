@@ -15,6 +15,7 @@ public class GameGui {
     private JLabel counter;
     
         public GameGui(Frage fr, controller con){
+            counter = new JLabel(con.getCounter());
             f = fr;
             control = con;
             frame = new JFrame();
@@ -29,6 +30,8 @@ public class GameGui {
             frame.add(b);
             frame.add(c);
             frame.add(d);
+            frame.add(counter);
+            counter.setLocation(300, 0);
             frame.setBackground(Color.yellow);
             frame.setVisible(true);    
             frage = new JLabel();
@@ -54,6 +57,7 @@ public class GameGui {
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
                 con.nextQuestion();   
+                counter = con.getCounter();
             }else{
                 System.out.println("leider falsch :(");
                 con.end();
