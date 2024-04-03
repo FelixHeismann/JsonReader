@@ -10,9 +10,10 @@ public class GameGui {
     private JButton d;
     private JLabel frage;
     private Frage f;
+    private JFrame frame;
         public GameGui(Frage fr, controller con){
             f = fr;
-            JFrame frame = new JFrame();
+            frame = new JFrame();
             frame.setSize(1920, 1080);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setLayout(null);
@@ -51,6 +52,7 @@ public class GameGui {
                 con.nextQuestion();   
             }else{
                 System.out.println("leider falsch :(");
+                con.end();
             }
         }
 
@@ -61,5 +63,15 @@ public class GameGui {
             d.setText(fra.getAntworten().getD());
             frage.setText(fra.getFrage());
             f = fra;
+        }
+
+        public void endScreen(){
+            frame.getContentPane().removeAll();
+            frame.repaint();
+            frame.setLayout(null);
+            String text = "vorbeiiii";
+            JLabel label = new JLabel("<html><span style='font-size:20px'>"+text+"</span></html>");
+            label.setSize(1000, 200);
+            frame.setBackground(Color.red);
         }
 }

@@ -12,4 +12,8 @@ public class controller {
         counter++;
         gui.changeButtons(reader.getRandomFrage());
     }
+
+    public void end(){
+        gui.endScreen();
+    }
 }
