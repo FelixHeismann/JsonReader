@@ -21,4 +21,8 @@ public class controller {
         counter = 1;
         nextQuestion();
     }
+
+    public int getCounter(){
+        return counter;
+    }
 }
