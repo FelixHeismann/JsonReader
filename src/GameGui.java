@@ -72,6 +72,7 @@ public class GameGui {
             String text = "vorbeiiii";
             JLabel label = new JLabel("<html><span style='font-size:20px'>"+text+"</span></html>");
             label.setSize(1000, 200);
+            frame.add(label);
             frame.setBackground(Color.red);
         }
 }
