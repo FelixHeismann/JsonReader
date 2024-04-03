@@ -39,7 +39,5 @@ public class Frage {
         this.antworten = antworten;
     }
     
-    
-    
 
 }
