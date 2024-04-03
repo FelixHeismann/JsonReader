@@ -46,9 +46,6 @@ public class GameGui {
         }
 
         public void selectionButtonPressed(Frage f,String j, controller con){
-            System.out.println("gedrückt");
-            System.out.println(f.getRichtige_antwort());
-            System.out.println(j);
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
                 con.nextQuestion();   
