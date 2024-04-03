@@ -11,8 +11,12 @@ public class GameGui {
     private JLabel frage;
     private Frage f;
     private JFrame frame;
+    private controller control;
+    private JButton endButton;
+    private JLabel endLabel;
         public GameGui(Frage fr, controller con){
             f = fr;
+            control = con;
             frame = new JFrame();
             frame.setSize(1920, 1080);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -66,13 +70,31 @@ public class GameGui {
         }
 
         public void endScreen(){
-            frame.getContentPane().removeAll();
-            frame.repaint();
-            frame.setLayout(null);
+            frage.setVisible(false);
+            a.setVisible(false);
+            b.setVisible(false);
+            c.setVisible(false);
+            d.setVisible(false);
             String text = "vorbeiiii";
-            JLabel label = new JLabel("<html><span style='font-size:20px'>"+text+"</span></html>");
-            label.setSize(1000, 200);
-            frame.add(label);
+            endLabel = new JLabel("<html><span style='font-size:50px'>"+text+"</span></html>");
+            endLabel.setSize(1000, 200);
+            frame.add(endLabel);
             frame.setBackground(Color.red);
+            endButton = new JButton("nochmal?");
+            endButton.addActionListener(e -> restarter());
+            frame.add(endButton);
+            endButton.setSize(400, 100);
+            endButton.setLocation(500, 200);
         }
-}
+
+        public void restarter(){
+            a.setVisible(true);
+            b.setVisible(true);
+            c.setVisible(true);
+            d.setVisible(true);
+            frage.setVisible(true);
+            endButton.setVisible(false);
+            endLabel.setVisible(false);
+            control.restart();
+        }
+    }

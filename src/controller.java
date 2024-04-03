@@ -16,4 +16,9 @@ public class controller {
     public void end(){
         gui.endScreen();
     }
+
+    public void restart(){
+        counter = 1;
+        nextQuestion();
+    }
 }
