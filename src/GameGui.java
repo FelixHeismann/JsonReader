@@ -1,45 +1,67 @@
 import java.awt.Color;
+
 import javax.swing.*;
 
 public class GameGui {
+    // Frage f ist eigentlich überflüssig
+    private Frage f;
+    private Controller control;
+
+    private int width = 1920;
+    private int height = 1080;
+    final private int CENTER_WIDTH = width/2;
+    final private int CENTER_HEIGHT = height/2; 
+    final private int QUESTION_BUTTONS_WIDTH = 200;
+    final private int QUESTION_BUTTONS_HEIGHT = 100;
+
+    private JFrame frame;
+    
     private JButton a;
     private JButton b;
     private JButton c;
     private JButton d;
-    private JLabel frage;
-    private Frage f;
-    private JFrame frame;
-    private Controller control;
     private JButton endButton;
+
+    private JLabel frage;
     private JLabel endLabel;
     private JLabel counter;
     
+    
         public GameGui(Frage fr, Controller con){
-            counter = new JLabel(Integer.toString(con.getCounter()));
             f = fr;
             control = con;
-            frame = new JFrame();
-            frame.setSize(1920, 1080);
+            
+            counter = new JLabel(Integer.toString(con.getCounter()));
+            counter.setLocation(1000, 300);
+
+            frame = new JFrame("Quizspiel");
+            frame.setSize(width, height);
+            frame.setVisible(true);
+            frame.setLayout(null); 
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setLayout(null);
-            a = addButtons(f.getAntworten().getA(),200, 200);
-            b = addButtons(f.getAntworten().getB(),600, 200);
-            c = addButtons(f.getAntworten().getC(),200, 600);
-            d = addButtons(f.getAntworten().getD(),600, 600);
+            frame.setLocationRelativeTo(null);
+            
+            a = addButtons("A: " + f.getAntworten().getA(), width/2 - 300, height/2 - 100);
+            b = addButtons("B: " + f.getAntworten().getB(), width/2 + 100, height/2 - 100);
+            c = addButtons("C: " + f.getAntworten().getC(), width/2 - 300, height/2 + 100);
+            d = addButtons("D: " + f.getAntworten().getD(), width/2 + 100, height/2 + 100);
+            
             frame.add(a);
             frame.add(b);
             frame.add(c);
             frame.add(d);
-            frame.add(counter);
-            counter.setLocation(300, 0);
-            frame.setBackground(Color.yellow);
-            frame.setVisible(true);    
+            frame.add(counter); 
+
+            frame.getContentPane().setBackground(Color.YELLOW);
             frage = new JLabel();
             frage.setText(f.getFrage());
+            frage.validate();
             frage.setSize(400, 100);
-            frage.setBackground(Color.cyan);
-
-            // Problem ist gerade, dass der Text manchmal zu lang ist. Dann stehen am Ende drei Punkte da und er der Satz wird nicht weitergeführt. Eine Alternative wäre ein JTextArea-Objekt
+            frage.setOpaque(true);
+            frage.setBackground(Color.CYAN);
+            frage.setLocation((width/2 - frage.getWidth()/2), 0);
+            //System.out.println(javax.swing.UIManager.getDefaults().getFont("Label.font"));
+        
             frame.add(frage);
             a.addActionListener(e -> selectionButtonPressed(f, "a", con));
             b.addActionListener(e -> selectionButtonPressed(f, "b", con));
@@ -49,29 +71,30 @@ public class GameGui {
 
         public JButton addButtons(String text, int xc, int yc){
             JButton button = new JButton(text); 
-            button.setSize(200, 100);
+            button.setSize(QUESTION_BUTTONS_WIDTH, QUESTION_BUTTONS_HEIGHT);
             button.setLocation(xc, yc);
-            button.setBackground(Color.cyan); 
+            button.setBackground(Color.CYAN); 
             return button;
         }
 
-        public void selectionButtonPressed(Frage f,String j, Controller con){
+        public void selectionButtonPressed(Frage f, String j, Controller con){
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
                 con.nextQuestion();   
-                counter = new JLabel(Integer.toString(con.getCounter()));
+                counter.setText(Integer.toString(con.getCounter()));
             }else{
                 System.out.println("leider falsch :(");
-                con.end();
+                endScreen();
             }
         }
 
         public void changeButtons(Frage fra){
-            a.setText(fra.getAntworten().getA());
-            b.setText(fra.getAntworten().getB());
-            c.setText(fra.getAntworten().getC());
-            d.setText(fra.getAntworten().getD());
+            a.setText("A: " + fra.getAntworten().getA());
+            b.setText("B: " + fra.getAntworten().getB());
+            c.setText("C: " + fra.getAntworten().getC());
+            d.setText("D: " + fra.getAntworten().getD());
             frage.setText(fra.getFrage());
+            frage.validate();
             f = fra;
         }
 
@@ -82,18 +105,20 @@ public class GameGui {
             c.setVisible(false);
             d.setVisible(false);
             
-            String text = "vorbeiiii";
+            String text = "Das Spiel ist vorbei.";
             endLabel = new JLabel("<html><span style='font-size:50px'>"+text+"</span></html>");
             endLabel.setSize(1000, 200);
-            endButton = new JButton("nochmal?");
+            endLabel.setLocation(width/2 - endLabel.getWidth()/2, 0);
+            endButton = new JButton("Nochmal?");
+            endButton.setSize(400, 100);
+            endButton.setLocation(width/2 - endButton.getWidth()/2, height/2 - endButton.getHeight()/2);
             endButton.addActionListener(e -> restarter());
             
             frame.add(endLabel);
             frame.setBackground(Color.red);
             frame.add(endButton);
             
-            endButton.setSize(400, 100);
-            endButton.setLocation(500, 200);
+            
         }
 
         public void restarter(){
@@ -107,3 +132,5 @@ public class GameGui {
             control.restart();
         }
     }
+
+
