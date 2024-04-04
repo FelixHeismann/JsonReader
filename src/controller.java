@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class controller {
+public class Controller {
     
     private int counter;
     private GameGui gui;
     private Reader reader; 
     private List<Frage> Fragen = new ArrayList<Frage>();
 
-    public controller(){
+    public Controller(){
         reader = new Reader();
         counter = 1;
         gui = new GameGui(reader.getRandomFrage(), this);
@@ -36,4 +36,9 @@ public class controller {
     public int getCounter(){
         return counter;
     }
+
+    public void resetFragenliste(){
+        this.Fragen = new ArrayList<Frage>();
+    }
 }
+
