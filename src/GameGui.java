@@ -15,7 +15,7 @@ public class GameGui {
     private JLabel counter;
     
         public GameGui(Frage fr, Controller con){
-            //counter = new JLabel(con.getCounter());
+            counter = new JLabel(Integer.toString(con.getCounter()));
             f = fr;
             control = con;
             frame = new JFrame();
@@ -30,14 +30,16 @@ public class GameGui {
             frame.add(b);
             frame.add(c);
             frame.add(d);
-            //frame.add(counter);
-            //counter.setLocation(300, 0);
+            frame.add(counter);
+            counter.setLocation(300, 0);
             frame.setBackground(Color.yellow);
             frame.setVisible(true);    
             frage = new JLabel();
             frage.setText(f.getFrage());
             frage.setSize(400, 100);
             frage.setBackground(Color.cyan);
+
+            // Problem ist gerade, dass der Text manchmal zu lang ist. Dann stehen am Ende drei Punkte da und er der Satz wird nicht weitergeführt. Eine Alternative wäre ein JTextArea-Objekt
             frame.add(frage);
             a.addActionListener(e -> selectionButtonPressed(f, "a", con));
             b.addActionListener(e -> selectionButtonPressed(f, "b", con));
@@ -57,7 +59,7 @@ public class GameGui {
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
                 con.nextQuestion();   
-                //counter = con.getCounter();
+                counter = new JLabel(Integer.toString(con.getCounter()));
             }else{
                 System.out.println("leider falsch :(");
                 con.end();
@@ -79,14 +81,17 @@ public class GameGui {
             b.setVisible(false);
             c.setVisible(false);
             d.setVisible(false);
+            
             String text = "vorbeiiii";
             endLabel = new JLabel("<html><span style='font-size:50px'>"+text+"</span></html>");
             endLabel.setSize(1000, 200);
-            frame.add(endLabel);
-            frame.setBackground(Color.red);
             endButton = new JButton("nochmal?");
             endButton.addActionListener(e -> restarter());
+            
+            frame.add(endLabel);
+            frame.setBackground(Color.red);
             frame.add(endButton);
+            
             endButton.setSize(400, 100);
             endButton.setLocation(500, 200);
         }
