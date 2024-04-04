@@ -35,5 +35,9 @@ public class Controller {
     public int getCounter(){
         return counter;
     }
+
+    public void resetFragenliste(){
+        this.Fragen = new ArrayList<Frage>();
+    }
 }
 
