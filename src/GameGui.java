@@ -30,8 +30,8 @@ public class GameGui {
             frame.add(b);
             frame.add(c);
             frame.add(d);
-            frame.add(counter);
-            counter.setLocation(300, 0);
+            //frame.add(counter);
+            //counter.setLocation(300, 0);
             frame.setBackground(Color.yellow);
             frame.setVisible(true);    
             frage = new JLabel();
