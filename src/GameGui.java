@@ -9,13 +9,13 @@ public class GameGui {
     private JLabel frage;
     private Frage f;
     private JFrame frame;
-    private controller control;
+    private Controller control;
     private JButton endButton;
     private JLabel endLabel;
     private JLabel counter;
     
-        public GameGui(Frage fr, controller con){
-            counter = new JLabel(con.getCounter());
+        public GameGui(Frage fr, Controller con){
+            //counter = new JLabel(con.getCounter());
             f = fr;
             control = con;
             frame = new JFrame();
@@ -53,11 +53,11 @@ public class GameGui {
             return button;
         }
 
-        public void selectionButtonPressed(Frage f,String j, controller con){
+        public void selectionButtonPressed(Frage f,String j, Controller con){
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
                 con.nextQuestion();   
-                counter = con.getCounter();
+                //counter = con.getCounter();
             }else{
                 System.out.println("leider falsch :(");
                 con.end();
