@@ -24,6 +24,7 @@ public class controller {
     }
 
     public void end(){
+        
         gui.endScreen();
     }
 
