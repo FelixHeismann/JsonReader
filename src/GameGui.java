@@ -60,7 +60,7 @@ public class GameGui {
             frage = new JLabel();
             frage.setText(f.getFrage());
             frage.validate();
-            frage.setSize(400, 100);
+            frage.setSize(800, 100);
             frage.setOpaque(true);
             frage.setBackground(Color.CYAN);
             frage.setLocation((CENTER_WIDTH - frage.getWidth()/2), 0);
@@ -111,9 +111,9 @@ public class GameGui {
             d.setVisible(false);
             
             String text = "Das Spiel ist vorbei.";
-            endLabel = new JLabel("<html><span style='font-size:50px'>"+text+"</span></html>");
+            endLabel = new JLabel("<html><span style='font-size:40px'>"+text+"</span></html>");
             endLabel.setSize(1000, 200);
-            endLabel.setLocation(width/2 - endLabel.getWidth()/2, 0);
+            endLabel.setLocation(width/2 - +endLabel.getWidth()/2, 0);
             endButton = new JButton("Nochmal?");
             endButton.setSize(400, 100);
             endButton.setLocation(width/2 - endButton.getWidth()/2, height/2 - endButton.getHeight()/2);
