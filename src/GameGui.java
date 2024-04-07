@@ -9,6 +9,7 @@ public class GameGui {
 
     private int width = 1920;
     private int height = 1080;
+
     final private int CENTER_WIDTH = width/2;
     final private int CENTER_HEIGHT = height/2; 
     final private int QUESTION_BUTTONS_WIDTH = 200;
@@ -41,10 +42,10 @@ public class GameGui {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setLocationRelativeTo(null);
             
-            a = addButtons("A: " + f.getAntworten().getA(), width/2 - 300, height/2 - 100);
-            b = addButtons("B: " + f.getAntworten().getB(), width/2 + 100, height/2 - 100);
-            c = addButtons("C: " + f.getAntworten().getC(), width/2 - 300, height/2 + 100);
-            d = addButtons("D: " + f.getAntworten().getD(), width/2 + 100, height/2 + 100);
+            a = addButtons("A: " + f.getAntworten().getA(), CENTER_WIDTH - 300, CENTER_HEIGHT - 100);
+            b = addButtons("B: " + f.getAntworten().getB(), CENTER_WIDTH + 100, CENTER_HEIGHT - 100);
+            c = addButtons("C: " + f.getAntworten().getC(), CENTER_WIDTH - 300, CENTER_HEIGHT + 100);
+            d = addButtons("D: " + f.getAntworten().getD(), CENTER_WIDTH + 100, CENTER_HEIGHT + 100);
             
             frame.add(a);
             frame.add(b);
@@ -59,7 +60,7 @@ public class GameGui {
             frage.setSize(400, 100);
             frage.setOpaque(true);
             frage.setBackground(Color.CYAN);
-            frage.setLocation((width/2 - frage.getWidth()/2), 0);
+            frage.setLocation((CENTER_WIDTH - frage.getWidth()/2), 0);
             //System.out.println(javax.swing.UIManager.getDefaults().getFont("Label.font"));
         
             frame.add(frage);
