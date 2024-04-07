@@ -9,7 +9,7 @@ public class Controller {
 
     public Controller(){
         reader = new Reader();
-        counter = 1;
+        counter = 0;
         gui = new GameGui(reader.getRandomFrage(), this);
     }
 
@@ -23,14 +23,18 @@ public class Controller {
         gui.changeButtons(reader.getRandomFrage());
     }
 
-    public void end(){
-        
-        gui.endScreen();
+    public void restart(){
+        counter = 0;
+        firstQuestion();
     }
 
-    public void restart(){
-        counter = 1;
-        nextQuestion();
+    public void firstQuestion(){
+        Frage frage = reader.getRandomFrage();
+        while (Fragen.contains(frage)) {
+            frage = reader.getRandomFrage();
+        } 
+        Fragen.add(frage);
+        gui.changeButtons(reader.getRandomFrage());
     }
 
     public int getCounter(){

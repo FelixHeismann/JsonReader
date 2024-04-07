@@ -31,9 +31,6 @@ public class GameGui {
         public GameGui(Frage fr, Controller con){
             f = fr;
             control = con;
-            
-            counter = new JLabel(Integer.toString(con.getCounter()));
-            counter.setLocation(1000, 300);
 
             frame = new JFrame("Quizspiel");
             frame.setSize(width, height);
@@ -47,6 +44,12 @@ public class GameGui {
             c = addButtons("C: " + f.getAntworten().getC(), CENTER_WIDTH - 300, CENTER_HEIGHT + 100);
             d = addButtons("D: " + f.getAntworten().getD(), CENTER_WIDTH + 100, CENTER_HEIGHT + 100);
             
+            counter = new JLabel("<html><span style='font-size:40px'>"+"Score: "+Integer.toString(con.getCounter())+"</span></html>");
+            counter.setLocation(1500, 100);
+            counter.setVisible(true);
+            counter.setBackground(Color.red);
+            counter.setSize(400, 100);
+
             frame.add(a);
             frame.add(b);
             frame.add(c);
@@ -82,7 +85,7 @@ public class GameGui {
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
                 con.nextQuestion();   
-                counter.setText(Integer.toString(con.getCounter()));
+                counter.setText("<html><span style='font-size:40px'>"+"Score: "+Integer.toString(con.getCounter())+"</span></html>");
             }else{
                 System.out.println("leider falsch :(");
                 endScreen();
@@ -96,6 +99,7 @@ public class GameGui {
             d.setText("D: " + fra.getAntworten().getD());
             frage.setText(fra.getFrage());
             frage.validate();
+            counter.setText("<html><span style='font-size:40px'>"+"Score: "+Integer.toString(control.getCounter())+"</span></html>");
             f = fra;
         }
 
