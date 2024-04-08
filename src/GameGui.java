@@ -22,7 +22,13 @@ public class GameGui {
     private JButton c;
     private JButton d;
     private JButton endButton;
+    private JButton highscore;
+    private JButton wwm;
+    private JButton menuButton;
 
+    private boolean mitDiff;
+
+    private JLabel menu;
     private JLabel frage;
     private JLabel endLabel;
     private JLabel counter;
@@ -50,11 +56,35 @@ public class GameGui {
             counter.setBackground(Color.red);
             counter.setSize(400, 100);
 
+            menu = new JLabel("<html><span style='font-size:40px'>"+"Hauptmenü"+"</span></html>");
+            menu.setLocation(CENTER_WIDTH-300, 100);
+            menu.setSize(600, 150);
+            menu.setBackground(Color.cyan);
+
+            highscore = new JButton("Highscore");
+            highscore.setLocation(CENTER_WIDTH-300, CENTER_HEIGHT-100);
+            highscore.addActionListener(e -> gamestartHs());
+            highscore.setSize(400, 100);
+            highscore.setBackground(Color.cyan);
+
+            wwm = new JButton("Wer wird Millionär");
+            wwm.setLocation(CENTER_WIDTH-300, CENTER_HEIGHT+100);
+            wwm.addActionListener(e -> gamestartWWM());
+            wwm.setSize(400, 100);
+            wwm.setBackground(Color.cyan);
+
             frame.add(a);
             frame.add(b);
             frame.add(c);
             frame.add(d);
-            frame.add(counter); 
+            frame.add(counter);
+            frame.add(menu);
+            frame.add(highscore);
+            frame.add(wwm);
+
+            highscore.setVisible(true);
+            menu.setVisible(true);
+            wwm.setVisible(true);
 
             frame.getContentPane().setBackground(Color.YELLOW);
             frage = new JLabel();
@@ -71,6 +101,12 @@ public class GameGui {
             b.addActionListener(e -> selectionButtonPressed(f, "b", con));
             c.addActionListener(e -> selectionButtonPressed(f, "c", con));
             d.addActionListener(e -> selectionButtonPressed(f, "d", con));
+
+            frage.setVisible(false);
+            a.setVisible(false);
+            b.setVisible(false);
+            c.setVisible(false);
+            d.setVisible(false);
         }
 
         public JButton addButtons(String text, int xc, int yc){
@@ -81,11 +117,39 @@ public class GameGui {
             return button;
         }
 
+        public void gamestartHs(){
+            mitDiff = false;
+            a.setVisible(true);
+            b.setVisible(true);
+            c.setVisible(true);
+            d.setVisible(true);
+            frage.setVisible(true);
+            highscore.setVisible(false);
+            menu.setVisible(false);
+            wwm.setVisible(false);
+        }
+
+        public void gamestartWWM(){
+            mitDiff = true;
+            a.setVisible(true);
+            b.setVisible(true);
+            c.setVisible(true);
+            d.setVisible(true);
+            frage.setVisible(true);
+            highscore.setVisible(false);
+            menu.setVisible(false);
+            wwm.setVisible(false);
+        }
+
         public void selectionButtonPressed(Frage f, String j, Controller con){
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
-                con.nextQuestion();   
-                counter.setText("<html><span style='font-size:40px'>"+"Score: "+Integer.toString(con.getCounter())+"</span></html>");
+                if(mitDiff=false){
+                    con.nextQuestion();   
+                    counter.setText("<html><span style='font-size:40px'>"+"Score: "+Integer.toString(con.getCounter())+"</span></html>");
+                }else{
+                    con.nextQuestionDifficulty();
+                }
             }else{
                 System.out.println("leider falsch :(");
                 endScreen();
