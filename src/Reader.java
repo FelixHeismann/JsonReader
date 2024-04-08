@@ -26,6 +26,14 @@ public class Reader {
         Random ran = new Random();
         int i = ran.nextInt(0, ListeFragen.size());
         return ListeFragen.get(i);
+    }   
+
+    public Frage getFrageIndex(int index){
+        return ListeFragen.get(index);
+    }
+
+    public List getListe(){
+        return ListeFragen;
     }
 
 }

@@ -47,15 +47,27 @@ public class Controller {
 
     //neue Methode die Schwierigkeit berücksichtigt, NOCH NICHT GETESTET!!!!!
     public void nextQuestionDifficulty(){
+        Frage text = null;
         List<Frage> FrageDiff = new ArrayList<Frage>();
+        System.out.println("counter: "+counter);
         for(int i=0; i<Fragen.size();i++){
-            if(Fragen.get(i).getSchwierigkeit()==counter){
-                FrageDiff.add(Fragen.get(i));
+            if(reader.getFrageIndex(i).getSchwierigkeit()==counter){
+                text = reader.getFrageIndex(i);
+                FrageDiff.add(text);
             }
         }
+        System.out.println("2");
+        for(int i=0; i<FrageDiff.size();i++){
+            System.out.println(FrageDiff.get(i));
+        }
+        System.out.println(FrageDiff.size());
         Random ran = new Random();
         int index = ran.nextInt(FrageDiff.size());
         gui.changeButtons(FrageDiff.get(index));
+    }
+
+    public void add1ToCounter(){
+        counter = counter +1;
     }
 }
 

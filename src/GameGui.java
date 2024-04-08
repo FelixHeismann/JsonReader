@@ -166,12 +166,14 @@ public class GameGui {
         public void selectionButtonPressed(Frage f, String j, Controller con){
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
-                // if(mitDiff=false){
-                    con.nextQuestion();   
+                if(!mitDiff){
+                    control.nextQuestion();   
                     counter.setText("<html><span style='font-size:40px'>"+"Score: "+Integer.toString(con.getCounter())+"</span></html>");
-                // }else{
-                //     con.nextQuestionDifficulty();
-                // }
+                }else{
+                    control.add1ToCounter();
+                    control.nextQuestionDifficulty();
+                    System.out.println("erreicht");
+                }
             }else{
                 System.out.println("leider falsch :(");
                 endScreen();
