@@ -44,5 +44,18 @@ public class Controller {
     public void resetFragenliste(){
         this.Fragen = new ArrayList<Frage>();
     }
+
+    //neue Methode die Schwierigkeit berücksichtigt, NOCH NICHT GETESTET!!!!!
+    public void nextQuestionDifficulty(){
+        List<Frage> FrageDiff = new ArrayList<Frage>();
+        for(int i=0; i<Fragen.size();i++){
+            if(Fragen.get(i).getSchwierigkeit()==counter){
+                FrageDiff.add(Fragen.get(i));
+            }
+        }
+        Random ran = new Random();
+        int index = ran.nextInt(FrageDiff.size());
+        gui.changeButtons(FrageDiff.get(index));
+    }
 }
 

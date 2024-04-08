@@ -598,6 +598,606 @@
     },
     "richtige_antwort": "a",
     "schwierigkeit": 10
+  },
+  {
+    "id": 51,
+    "frage": "Wer entdeckte den Satz des Pythagoras?",
+    "antworten": {
+      "a": "Pythagoras",
+      "b": "Euklid",
+      "c": "Archimedes",
+      "d": "Platon"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 52,
+    "frage": "Welcher Planet wird auch als der 'Rote Planet' bezeichnet?",
+    "antworten": {
+      "a": "Mars",
+      "b": "Venus",
+      "c": "Jupiter",
+      "d": "Saturn"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 53,
+    "frage": "Was ist die chemische Formel für Wasser?",
+    "antworten": {
+      "a": "H2O2",
+      "b": "CO2",
+      "c": "H2O",
+      "d": "CH4"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 54,
+    "frage": "Welche Stadt wird als 'Stadt der Liebe' bezeichnet?",
+    "antworten": {
+      "a": "New York City",
+      "b": "Paris",
+      "c": "Rom",
+      "d": "London"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 55,
+    "frage": "Wer malte 'Die Sternennacht'?",
+    "antworten": {
+      "a": "Pablo Picasso",
+      "b": "Vincent van Gogh",
+      "c": "Leonardo da Vinci",
+      "d": "Claude Monet"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 56,
+    "frage": "Was ist die Hauptstadt von Australien?",
+    "antworten": {
+      "a": "Sydney",
+      "b": "Melbourne",
+      "c": "Canberra",
+      "d": "Perth"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 57,
+    "frage": "Welches ist das größte Organ im menschlichen Körper?",
+    "antworten": {
+      "a": "Gehirn",
+      "b": "Leber",
+      "c": "Haut",
+      "d": "Herz"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 58,
+    "frage": "Wer schrieb den Roman '1984'?",
+    "antworten": {
+      "a": "Aldous Huxley",
+      "b": "George Orwell",
+      "c": "Ray Bradbury",
+      "d": "Kurt Vonnegut"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 59,
+    "frage": "Welches Tier hat das größte Gehirn im Verhältnis zu seiner Körpergröße?",
+    "antworten": {
+      "a": "Mensch",
+      "b": "Elefant",
+      "c": "Delfin",
+      "d": "Eichhörnchen"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 10
+  },
+  {
+    "id": 60,
+    "frage": "Wer war der erste Mensch im Weltraum?",
+    "antworten": {
+      "a": "Yuri Gagarin",
+      "b": "Neil Armstrong",
+      "c": "Buzz Aldrin",
+      "d": "Alan Shepard"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 61,
+    "frage": "In welchem Land befindet sich die Sahara-Wüste?",
+    "antworten": {
+      "a": "Ägypten",
+      "b": "Marokko",
+      "c": "Südafrika",
+      "d": "Algerien"
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 62,
+    "frage": "Welche ist die längste Fluss der Welt?",
+    "antworten": {
+      "a": "Amazonas",
+      "b": "Nil",
+      "c": "Jangtse",
+      "d": "Mississippi"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 63,
+    "frage": "Wer schrieb 'Faust'?",
+    "antworten": {
+      "a": "Johann Wolfgang von Goethe",
+      "b": "Friedrich Schiller",
+      "c": "Heinrich Heine",
+      "d": "Thomas Mann"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 64,
+    "frage": "Was ist die Hauptzutat in Sushi?",
+    "antworten": {
+      "a": "Fisch",
+      "b": "Reis",
+      "c": "Seetang",
+      "d": "Sojasauce"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 65,
+    "frage": "Wer erfand das Telefon?",
+    "antworten": {
+      "a": "Thomas Edison",
+      "b": "Nikola Tesla",
+      "c": "Alexander Graham Bell",
+      "d": "Guglielmo Marconi"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 66,
+    "frage": "In welchem Jahr wurde das World Wide Web erfunden?",
+    "antworten": {
+      "a": "1989",
+      "b": "1991",
+      "c": "1993",
+      "d": "1995"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 67,
+    "frage": "Welches Land hat die meisten UNESCO-Welterbestätten?",
+    "antworten": {
+      "a": "Italien",
+      "b": "Spanien",
+      "c": "China",
+      "d": "Frankreich"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 68,
+    "frage": "Wer schrieb 'Die Ilias'?",
+    "antworten": {
+      "a": "Homer",
+      "b": "Platon",
+      "c": "Aristoteles",
+      "d": "Sokrates"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 69,
+    "frage": "Wie viele Ozeane gibt es auf der Erde?",
+    "antworten": {
+      "a": "3",
+      "b": "4",
+      "c": "5",
+      "d": "6"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 70,
+    "frage": "Was ist die längste Schlange der Welt?",
+    "antworten": {
+      "a": "Königskobra",
+      "b": "Inlandstaipan",
+      "c": "Grüne Anaconda",
+      "d": "Netzpython"
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 71,
+    "frage": "Wer war der erste Mensch, der den Südpol erreichte?",
+    "antworten": {
+      "a": "Roald Amundsen",
+      "b": "Robert F. Scott",
+      "c": "Ernest Shackleton",
+      "d": "Richard E. Byrd"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 72,
+    "frage": "Was ist die Hauptzutat in Borschtsch?",
+    "antworten": {
+      "a": "Kartoffeln",
+      "b": "Rote Beete",
+      "c": "Tomaten",
+      "d": "Rindfleisch"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 73,
+    "frage": "Wer malte 'Die Schrei'?",
+    "antworten": {
+      "a": "Pablo Picasso",
+      "b": "Vincent van Gogh",
+      "c": "Edvard Munch",
+      "d": "Salvador Dalí"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 74,
+    "frage": "Welcher Planet ist der größte im Sonnensystem?",
+    "antworten": {
+      "a": "Mars",
+      "b": "Venus",
+      "c": "Jupiter",
+      "d": "Saturn"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 75,
+    "frage": "Wer schrieb 'Krieg und Frieden'?",
+    "antworten": {
+      "a": "Fjodor Dostojewski",
+      "b": "Leo Tolstoi",
+      "c": "Anton Tschechow",
+      "d": "Iwan Turgenew"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 76,
+    "frage": "In welchem Land befindet sich der Mount Everest?",
+    "antworten": {
+      "a": "Nepal",
+      "b": "Indien",
+      "c": "Tibet",
+      "d": "Bhutan"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 77,
+    "frage": "Welcher der folgenden Schriftsteller gewann den Nobelpreis für Literatur?",
+    "antworten": {
+      "a": "James Joyce",
+      "b": "F. Scott Fitzgerald",
+      "c": "William Faulkner",
+      "d": "Ernest Hemingway"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 78,
+    "frage": "Was ist die Hauptzutat in Paella?",
+    "antworten": {
+      "a": "Reis",
+      "b": "Nudeln",
+      "c": "Kartoffeln",
+      "d": "Brot"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 79,
+    "frage": "In welchem Jahr fiel die Berliner Mauer?",
+    "antworten": {
+      "a": "1987",
+      "b": "1989",
+      "c": "1991",
+      "d": "1993"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 80,
+    "frage": "Wer schrieb 'Romeo und Julia'?",
+    "antworten": {
+      "a": "William Shakespeare",
+      "b": "Christopher Marlowe",
+      "c": "Thomas Middleton",
+      "d": "John Fletcher"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 81,
+    "frage": "Welches Element hat das chemische Symbol 'Fe'?",
+    "antworten": {
+      "a": "Fluor",
+      "b": "Eisen",
+      "c": "Kohlenstoff",
+      "d": "Wasserstoff"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 82,
+    "frage": "Was ist die Hauptzutat in Guacamole?",
+    "antworten": {
+      "a": "Käse",
+      "b": "Avocado",
+      "c": "Tomaten",
+      "d": "Reis"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 83,
+    "frage": "Welcher Chemiker prägte den Begriff 'Radioaktivität'?",
+    "antworten": {
+      "a": "Albert Einstein",
+      "b": "Marie Curie",
+      "c": "Ernest Rutherford",
+      "d": "Antoine Lavoisier"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 84,
+    "frage": "Was ist die Hauptzutat in Bouillabaisse?",
+    "antworten": {
+      "a": "Fisch",
+      "b": "Hühnchen",
+      "c": "Rindfleisch",
+      "d": "Gemüse"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 85,
+    "frage": "Welcher Künstler schuf das Gemälde 'Die letzte Abendmahl'?",
+    "antworten": {
+      "a": "Leonardo da Vinci",
+      "b": "Michelangelo",
+      "c": "Raffael",
+      "d": "Sandro Botticelli"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 86,
+    "frage": "In welchem Jahrhundert wurde der Eiffelturm errichtet?",
+    "antworten": {
+      "a": "18. Jahrhundert",
+      "b": "19. Jahrhundert",
+      "c": "20. Jahrhundert",
+      "d": "21. Jahrhundert"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 87,
+    "frage": "Welcher Planet wird auch als 'Morgenstern' bezeichnet?",
+    "antworten": {
+      "a": "Mars",
+      "b": "Venus",
+      "c": "Jupiter",
+      "d": "Saturn"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 88,
+    "frage": "Wer schrieb 'Der kleine Prinz'?",
+    "antworten": {
+      "a": "Antoine de Saint-Exupéry",
+      "b": "Jules Verne",
+      "c": "Albert Camus",
+      "d": "Marcel Proust"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 89,
+    "frage": "Welches ist das häufigste Element in der Erdkruste?",
+    "antworten": {
+      "a": "Sauerstoff",
+      "b": "Eisen",
+      "c": "Silizium",
+      "d": "Aluminium"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 90,
+    "frage": "Wer erfand das Periodensystem der Elemente?",
+    "antworten": {
+      "a": "Dmitri Mendelejew",
+      "b": "Marie Curie",
+      "c": "Albert Einstein",
+      "d": "Niels Bohr"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 91,
+    "frage": "Welche Wissenschaft beschäftigt sich mit dem Studium der Sterne und des Universums?",
+    "antworten": {
+      "a": "Biologie",
+      "b": "Astronomie",
+      "c": "Geologie",
+      "d": "Meteorologie"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 92,
+    "frage": "Wer war der erste Mensch auf dem Mond?",
+    "antworten": {
+      "a": "Yuri Gagarin",
+      "b": "Neil Armstrong",
+      "c": "Buzz Aldrin",
+      "d": "Alan Shepard"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 93,
+    "frage": "Was ist die Hauptzutat in Miso-Suppe?",
+    "antworten": {
+      "a": "Nudeln",
+      "b": "Reis",
+      "c": "Sojabohnen",
+      "d": "Fisch"
+    },
+    "richtige_antwort": "c",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 94,
+    "frage": "In welchem Land wurde Schach erfunden?",
+    "antworten": {
+      "a": "China",
+      "b": "Indien",
+      "c": "Russland",
+      "d": "Iran"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 95,
+    "frage": "Wer schrieb 'Der Prozess'?",
+    "antworten": {
+      "a": "Franz Kafka",
+      "b": "Thomas Mann",
+      "c": "Hermann Hesse",
+      "d": "Max Brod"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 96,
+    "frage": "Welcher Künstler schuf das Gemälde 'Die Geburt der Venus'?",
+    "antworten": {
+      "a": "Leonardo da Vinci",
+      "b": "Michelangelo",
+      "c": "Raffael",
+      "d": "Sandro Botticelli"
+    },
+    "richtige_antwort": "d",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 97,
+    "frage": "Welcher Planet wird auch als 'Abendstern' bezeichnet?",
+    "antworten": {
+      "a": "Mars",
+      "b": "Venus",
+      "c": "Jupiter",
+      "d": "Saturn"
+    },
+    "richtige_antwort": "b",
+    "schwierigkeit": 7
+  },
+  {
+    "id": 98,
+    "frage": "Wer war der erste Präsident der Vereinigten Staaten?",
+    "antworten": {
+      "a": "George Washington",
+      "b": "Thomas Jefferson",
+      "c": "John Adams",
+      "d": "Abraham Lincoln"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
+  },
+  {
+    "id": 99,
+    "frage": "In welchem Land wurde Pizza erfunden?",
+    "antworten": {
+      "a": "Italien",
+      "b": "Spanien",
+      "c": "Frankreich",
+      "d": "Griechenland"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 8
+  },
+  {
+    "id": 100,
+    "frage": "Wer schrieb 'Die Göttliche Komödie'?",
+    "antworten": {
+      "a": "Dante Alighieri",
+      "b": "Geoffrey Chaucer",
+      "c": "Miguel de Cervantes",
+      "d": "Johann Wolfgang von Goethe"
+    },
+    "richtige_antwort": "a",
+    "schwierigkeit": 9
   }
 ]
   
