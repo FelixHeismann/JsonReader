@@ -54,12 +54,28 @@ public class GameGui {
             counter.setLocation(1500, 100);
             counter.setVisible(true);
             counter.setBackground(Color.red);
-            counter.setSize(400, 100);
+            counter.setSize(400, 100);     
+            
+            String text = "Das Spiel ist vorbei.";
+            endLabel = new JLabel("<html><span style='font-size:40px'>"+text+"</span></html>");
+            endLabel.setSize(1000, 200);
+            endLabel.setLocation(width/2 - +endLabel.getWidth()/2, 0);
+
+            endButton = new JButton("Nochmal?");
+            endButton.setSize(400, 100);
+            endButton.setLocation(width/2 - endButton.getWidth()/2, height/2 - endButton.getHeight()/2);
+            endButton.addActionListener(e -> restarter());
 
             menu = new JLabel("<html><span style='font-size:40px'>"+"Hauptmenü"+"</span></html>");
             menu.setLocation(CENTER_WIDTH-300, 100);
             menu.setSize(600, 150);
             menu.setBackground(Color.cyan);
+
+            menuButton = new JButton("Hauptmenü");
+            menuButton.setSize(300, 100);
+            menuButton.setBackground(Color.lightGray);
+            menuButton.addActionListener(e -> menu());
+            menuButton.setLocation(100, 100);
 
             highscore = new JButton("Highscore");
             highscore.setLocation(CENTER_WIDTH-300, CENTER_HEIGHT-100);
@@ -81,6 +97,9 @@ public class GameGui {
             frame.add(menu);
             frame.add(highscore);
             frame.add(wwm);
+            frame.add(menuButton);            
+            frame.add(endLabel);
+            frame.add(endButton);
 
             highscore.setVisible(true);
             menu.setVisible(true);
@@ -107,6 +126,9 @@ public class GameGui {
             b.setVisible(false);
             c.setVisible(false);
             d.setVisible(false);
+            endLabel.setVisible(false);
+            endButton.setVisible(false);
+
         }
 
         public JButton addButtons(String text, int xc, int yc){
@@ -144,12 +166,12 @@ public class GameGui {
         public void selectionButtonPressed(Frage f, String j, Controller con){
             if(f.getRichtige_antwort().equals(j)){
                 System.out.println("richtig");
-                if(mitDiff=false){
+                // if(mitDiff=false){
                     con.nextQuestion();   
                     counter.setText("<html><span style='font-size:40px'>"+"Score: "+Integer.toString(con.getCounter())+"</span></html>");
-                }else{
-                    con.nextQuestionDifficulty();
-                }
+                // }else{
+                //     con.nextQuestionDifficulty();
+                // }
             }else{
                 System.out.println("leider falsch :(");
                 endScreen();
@@ -173,21 +195,8 @@ public class GameGui {
             b.setVisible(false);
             c.setVisible(false);
             d.setVisible(false);
-            
-            String text = "Das Spiel ist vorbei.";
-            endLabel = new JLabel("<html><span style='font-size:40px'>"+text+"</span></html>");
-            endLabel.setSize(1000, 200);
-            endLabel.setLocation(width/2 - +endLabel.getWidth()/2, 0);
-            endButton = new JButton("Nochmal?");
-            endButton.setSize(400, 100);
-            endButton.setLocation(width/2 - endButton.getWidth()/2, height/2 - endButton.getHeight()/2);
-            endButton.addActionListener(e -> restarter());
-            
-            frame.add(endLabel);
-            frame.setBackground(Color.red);
-            frame.add(endButton);
-            
-            
+            endLabel.setVisible(true);
+            endButton.setVisible(true);          
         }
 
         public void restarter(){
@@ -199,6 +208,21 @@ public class GameGui {
             endButton.setVisible(false);
             endLabel.setVisible(false);
             control.restart();
+        }
+
+        public void menu(){
+            endButton.setVisible(false);
+            endLabel.setVisible(false);
+
+            frage.setVisible(false);
+            a.setVisible(false);
+            b.setVisible(false);
+            c.setVisible(false);
+            d.setVisible(false);
+
+            menu.setVisible(true);
+            wwm.setVisible(true);
+            highscore.setVisible(true);
         }
     }
 
