@@ -20,7 +20,7 @@ public class Controller {
             frage = reader.getRandomFrage();
         } 
         Fragen.add(frage);
-        gui.changeButtons(reader.getRandomFrage());
+        gui.changeButtons(frage);
     }
 
     public void restart(){
