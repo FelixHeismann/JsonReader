@@ -50,13 +50,12 @@ public class Controller {
         Frage text = null;
         List<Frage> FrageDiff = new ArrayList<Frage>();
         System.out.println("counter: "+counter);
-        for(int i=0; i<Fragen.size();i++){
+        for(int i=0; i<reader.getListe().size();i++){
             if(reader.getFrageIndex(i).getSchwierigkeit()==counter){
                 text = reader.getFrageIndex(i);
                 FrageDiff.add(text);
             }
         }
-        System.out.println("2");
         for(int i=0; i<FrageDiff.size();i++){
             System.out.println(FrageDiff.get(i));
         }

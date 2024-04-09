@@ -161,6 +161,7 @@ public class GameGui {
             highscore.setVisible(false);
             menu.setVisible(false);
             wwm.setVisible(false);
+            wwmCounter();
         }
 
         public void selectionButtonPressed(Frage f, String j, Controller con){
@@ -172,7 +173,7 @@ public class GameGui {
                 }else{
                     control.add1ToCounter();
                     control.nextQuestionDifficulty();
-                    System.out.println("erreicht");
+                    wwmCounter();
                 }
             }else{
                 System.out.println("leider falsch :(");
@@ -225,6 +226,48 @@ public class GameGui {
             menu.setVisible(true);
             wwm.setVisible(true);
             highscore.setVisible(true);
+        }
+
+        public void wwmCounter(){
+            int x = control.getCounter();
+            switch (x){
+                case 0: 
+                    counter.setText("<html><span style='font-size:40px'>"+"500€"+"</span></html>");
+                    break;
+                case 1:
+                    counter.setText("<html><span style='font-size:40px'>"+"1000€"+"</span></html>");
+                    break; 
+                case 2:
+                    counter.setText("<html><span style='font-size:40px'>"+"2000€"+"</span></html>");
+                    break;
+                case 3:
+                    counter.setText("<html><span style='font-size:40px'>"+"4000€"+"</span></html>"); 
+                    break;
+                case 4:
+                    counter.setText("<html><span style='font-size:40px'>"+"8000€"+"</span></html>"); 
+                    break;
+                case 5:
+                    counter.setText("<html><span style='font-size:40px'>"+"16000€"+"</span></html>");
+                    break;
+                case 6:
+                    counter.setText("<html><span style='font-size:40px'>"+"32000€"+"</span></html>");  
+                    break;
+                case 7:
+                    counter.setText("<html><span style='font-size:40px'>"+"64000€"+"</span></html>");   
+                    break;
+                case 8:
+                    counter.setText("<html><span style='font-size:40px'>"+"125000€"+"</span></html>");
+                    break;
+                case 9:
+                    counter.setText("<html><span style='font-size:40px'>"+"250000€"+"</span></html>");  
+                    break;
+                case 10:
+                    counter.setText("<html><span style='font-size:40px'>"+"500000€"+"</span></html>");
+                    break;
+                default:
+     
+                    break;
+            }
         }
     }
 
