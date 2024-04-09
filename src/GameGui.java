@@ -211,6 +211,9 @@ public class GameGui {
             endButton.setVisible(false);
             endLabel.setVisible(false);
             control.restart();
+            if(mitDiff){
+                wwmCounter();
+            }
         }
 
         public void menu(){
