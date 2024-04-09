@@ -32,7 +32,7 @@ public class Reader {
         return ListeFragen.get(index);
     }
 
-    public List getListe(){
+    public List<Frage> getListe(){
         return ListeFragen;
     }
 
